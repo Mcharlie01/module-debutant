@@ -37,8 +37,8 @@ function exercice0(prochainClient) { // Ne supprimez/commentez pas cette ligne
   // prochain client. N'oubliez pas de mettre les parenthèses "()" à la fin de cette instruction !
 
   // Décommentez le code de Tom ci-dessous
-  // let poidsClient = prochainClient.mesurerPoids();
-  // console.log(poidsClient);
+   let poidsClient = prochainClient.mesurerPoids();
+   console.log(poidsClient + " kg");
 
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
@@ -50,9 +50,9 @@ function exercice1(prochainClient) { // Ne supprimez/commentez pas cette ligne
   // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
 
   // Décommentez le code de Tom ci-dessous
-  // let poidsClient = prochainClient.mesurerPoids();
-  // console.log(poidsClient);
-  // console.log(poidsClient);
+  let poidsClient = prochainClient.mesurerPoids();
+  console.log(poidsClient);
+  console.log(prochainClient.mesurerPoids());
 
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
@@ -64,9 +64,11 @@ function exercice2(prochainClient) { // Ne supprimez/commentez pas cette ligne
   // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
 
   // Décommentez le code de Tom ci-dessous
-  // let poidsClient = prochainClient.mesurerPoids();
-  // console.log(poidsClient);
-
+ let poidsClient = prochainClient.mesurerPoids();
+ while (poidsClient != 0) {
+  console.log(poidsClient);
+  poidsClient = prochainClient.mesurerPoids();
+ }
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
 } // Ne supprimez pas cette accolade fermante
@@ -78,10 +80,14 @@ function exercice3(nombreDeTours) { // Ne supprimez/commentez pas cette ligne
   // Utilisez la variable nombreDeTours qui contient le nombre de tours à faire pour la file d'attente actuelle
 
   // Décommentez le code de Tom ci-dessous
-  // let duree = nombreDeTours * 12;
-  // let nombreHeures = 0;
-  // let nombreMinutes = 0;
-  // console.log(nombreHeures + "h" + nombreMinutes);
+   let duree = nombreDeTours * 12;
+
+   while (duree<60){
+   let nombreHeures = 0;
+   let nombreMinutes = 0;
+   console.log(nombreHeures + "h" + nombreMinutes);
+   }
+   
 
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
