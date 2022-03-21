@@ -9,9 +9,9 @@
  */
 
 // Exercice 0
-
+console.log("JavaScript est facile")
 // Exercice 1
-
+console.log("JavaScript c'est facile!")
 // Exercice 2
 
 // Exercice 3
