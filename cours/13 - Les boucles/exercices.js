@@ -81,13 +81,28 @@ function exercice3(nombreDeTours) { // Ne supprimez/commentez pas cette ligne
 
   // Décommentez le code de Tom ci-dessous
    let duree = nombreDeTours * 12;
-
-   while (duree<60){
    let nombreHeures = 0;
    let nombreMinutes = 0;
-   console.log(nombreHeures + "h" + nombreMinutes);
+
+   while (duree >= 60) {
+   nombreHeures = nombreHeures + 1;
+   nombreMinutes = duree - 60;
+   break;
    }
-   
+
+   nombreMinutes= duree;
+
+   if (nombreHeures < 10) {
+    nombreHeures = "0" + nombreHeures;
+   }
+
+   if (nombreMinutes < 10) {
+     nombreMinutes = "0" + nombreMinutes;
+   }
+
+   //afficher correctement la durée
+
+   console.log(nombreHeures + "h" + nombreMinutes);
 
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
