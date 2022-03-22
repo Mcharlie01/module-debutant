@@ -86,8 +86,7 @@ function exercice3(nombreDeTours) { // Ne supprimez/commentez pas cette ligne
 
    while (duree >= 60) {
    nombreHeures = nombreHeures + 1;
-   nombreMinutes = duree - 60;
-   break;
+   duree = duree - 60;
    }
 
    nombreMinutes= duree;
